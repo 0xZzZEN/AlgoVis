@@ -1,0 +1,1 @@
+gcc -o algo_vis main.c -Wextra -Wall -I include -L lib -lraylib -lgdi32 -lwinmm
