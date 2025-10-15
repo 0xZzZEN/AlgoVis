@@ -1,10 +1,12 @@
 # define target platform: PLATFORM_DESKTOP, TBD: PLATFORM_RPI, PLATFORM_DRM, PLATFORM_ANDROID, PLATFORM_WEB
-PLATFORM              ?= PLATFORM_DESKTOP_WIN_x64_x86
+PLATFORM              = PLATFORM_DESKTOP_WIN_x64_x86
 
 # define project
-PROJECT_NAME          ?= algo-vis
-PROJECT_VERSION       ?= 0.1
-PROJECT_BUILD_MODE    ?= Release # use DEBUG for -g
+PROJECT_NAME          = algo-vis
+PROJECT_VERSION       = 0.1
+PROJECT_BUILD_MODE    = DEBUG # use DEBUG build mode for -g
+# info for debug/build
+$(info PROJECT_BUILD_MODE is $(PROJECT_BUILD_MODE))
 
 # define source files and object files
 PROJECT_SOURCE_FILES = main.c
@@ -24,7 +26,10 @@ MAKE ?= make
 
 # define compiler flags
 # -I stands for include paths for required headers in current folder + raylib include path
-CFLAGS = -Wall -Wextra -std=c99 -D$(PLATFORM) -I. -I$(RAYLIB_INCLUDE_PATH)
+CFLAGS = -Wall -Wextra -std=c99 -I. -I$(RAYLIB_INCLUDE_PATH)
+
+# DEBUG_OPTION will hold the -g flag for the assembly and linker step when in DEBUG mode
+DEBUG_OPTION =
 
 # library paths for linker
 LDFLAGS = -L. -L$(RAYLIB_LIB_PATH)
@@ -33,19 +38,20 @@ LDFLAGS = -L. -L$(RAYLIB_LIB_PATH)
 # NOTE: WinMM library required to set high-res timer resolution
 LDLIBS = -lraylib -lgdi32 -lwinmm -lopengl32
 
-ifeq ($(PROJECT_BUILD_MODE),DEBUG)
-    CFLAGS += -g -D_DEBUG
+ifeq ($(strip $(PROJECT_BUILD_MODE)),DEBUG)
+	CFLAGS += -D$(PLATFORM)_DEBUG
+	DEBUG_OPTION += -g
 else
-    CFLAGS += -O1
+    CFLAGS += -O1 -D$(PLATFORM)
 endif
 
 # goal 
 $(PROJECT_NAME): $(OBJS) 
-	$(CC) $(LDFLAGS) -o $(PROJECT_NAME) $(OBJS) $(LDLIBS)
+	$(CC) $(DEBUG_OPTION) $(LDFLAGS) -o $(PROJECT_NAME) $(OBJS) $(LDLIBS)
 
 # source to obj
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(DEBUG_OPTION) -c $< -o $@
 
 
 # phony target, to make command clean
