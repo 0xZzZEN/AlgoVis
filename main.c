@@ -1,12 +1,11 @@
 #include <stdio.h>
-
 #include <stdint.h>
 #include <raylib.h>
 
-/*#include "./states/menuState/menuState.h"
-#include "./states/loadingState/loadingState.h"
-#include "./states/randomState/randomState.h"
-#include "./states/playState/playState.h"
+#include "./states/MenuState/menuState.c"
+/*#include "./states/LoadingState/LoadingState.h"
+#include "./states/RandomState/RandomState.h"
+#include "./states/PlayState/PlayState.h"
 */
 
 /* some global constants for initalization*/
@@ -22,16 +21,20 @@ const int32_t VIRTUAL_HEIGHT = 320;
 to be implemented
 */
 
-
 int main(void)
 {
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Algorithms Interactive Visualiser");
+
+    // define a global statemachine, starting at MenuState
+    // states: MenuState, LoadingState, RandomState, PlayState
+    struct StateMachine gStateMachine = {.currentState = MenuState};
     // while ESC key not pressed
     while (!WindowShouldClose())
     {
+        // runs every frame
         BeginDrawing();
             ClearBackground(BLACK);
-            DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+            DrawText("Congrats! You created your first window!", 190, 200, 20, WHITE);
         EndDrawing();
         /*
         #if defined(PLATFORM_DESKTOP_WIN_x64_x86_DEBUG)
