@@ -1,4 +1,4 @@
-An interactive, cross-platform algorithm visualizer built with C and raylib. Explore a vivid combination of logic, entertainment and art
+An interactive, cross-platform algorithm visualizer built with C and raylib. Explore a combination of logic, entertainment and art
 
 Educational project to understand how raylib works..
 Work In Progress
