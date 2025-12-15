@@ -46,9 +46,10 @@ LDFLAGS = -L. -L$(RAYLIB_LIB_PATH)
 # NOTE: WinMM library required to set high-res timer resolution
 LDLIBS = -lraylib -lgdi32 -lwinmm -lopengl32
 
+# g3 flag is list max debug information
 ifeq ($(strip $(PROJECT_BUILD_MODE)),DEBUG)
 	CFLAGS += -D$(PLATFORM)_DEBUG
-	DEBUG_OPTION += -g
+	DEBUG_OPTION += -g3
 else
     CFLAGS += -O1 -D$(PLATFORM)
 endif

@@ -23,18 +23,20 @@ to be implemented
 
 int main(void)
 {
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Algorithms Interactive Visualiser");
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Algorithms Interactive Visualizer");
 
-    // define a global statemachine, starting at MenuState
+    // define a global statemachine, initialized at MenuState
     // states: MenuState, LoadingState, RandomState, PlayState
     struct StateMachine gStateMachine = {.currentState = MENUSTATE};
-    // while ESC key not pressed
+    statemachine_init(gStateMachine)
+    // while ESC key not pressed, mainLoop
     while (!WindowShouldClose())
     {
         // runs every frame
+        // render(gStateMachine);
         BeginDrawing();
             ClearBackground(BLACK);
-            DrawText("Congrats! You created your first window!", 190, 200, 20, WHITE);
+            DrawText("H", 190, 200, 20, WHITE);
         EndDrawing();
         /*
         #if defined(PLATFORM_DESKTOP_WIN_x64_x86_DEBUG)
@@ -44,7 +46,6 @@ int main(void)
         */
         
         /*
-        mainLoop
         menuState
         loadingState
         randomState
