@@ -9,9 +9,9 @@ Goal is to render <b>sorting algorithms</b> on the screen and trace them without
 
 
 # Program states
-StartState - a starting state after execution. The croupier appearance <br>
-MenuState - a selection option for choosing data structures, particular algorithm, etc
-LoadingStatem - transit between MenuState to the RandomState
-RandomState - random event 33%, happening in the LoadingState
-PlayState - visualization of the particular algorithm, with step by step approach
+<p>StartState - a starting state after execution. The croupier appearance </p>
+<p>MenuState - a selection option for choosing data structures, particular algorithm, etc </p>
+<p>LoadingStatem - transit between MenuState to the RandomState </p>
+<p>RandomState - random event 33%, happening in the LoadingState </p>
+<p>PlayState - visualization of the particular algorithm, with step by step approach </p>
 # Transition map
