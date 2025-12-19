@@ -13,9 +13,9 @@ Goal is to render <b>sorting algorithms</b> on the screen and trace them without
 
 <br>MenuState - a selection option for choosing data structures, particular algorithm, etc
 
-<br>LoadingStatem - transit between MenuState to the RandomState
+<br>LoadingState - transition between MenuState to the RandomState
 
-<br>RandomState - random event 33%, happening in the LoadingState
+<br>RandomState - a random event 33%, happening in the LoadingState
 
 <br>PlayState - visualization of the particular algorithm, with step by step approach
 
