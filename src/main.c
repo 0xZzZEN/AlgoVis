@@ -36,7 +36,7 @@ int main(void)
         // render(gStateMachine);
         BeginDrawing();
             ClearBackground(BLACK);
-            DrawText("H", 190, 200, 20, WHITE);
+            DrawText("Leeet's goooo", 190, 200, 20, WHITE);
         EndDrawing();
         /*
         #if defined(PLATFORM_DESKTOP_WIN_x64_x86_DEBUG)

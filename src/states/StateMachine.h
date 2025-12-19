@@ -1,3 +1,7 @@
+/*
+    Statemachine generic functions and structure to use in the conjunction in the program
+*/
+
 #ifndef STATEMACHINE_H
 #define STATEMACHINE_H
 
@@ -52,22 +56,14 @@ struct StateStructEx
 };
 
 
-// states of the program
-enum ProgramStates
-{
-    MENUSTATE, // a selection option for choosing data structures, particular algorithm, etc
-    LOADINGSTATE, // transit between MenuState to the RandomState
-    RANDOMSTATE, // random event 33%, happening in the LoadingState
-    PLAYSTATE // visualization of the particular algorithm, with step by step approach
-};
-
 extern struct StateMachine gStateMachine; // global state declaration to keep track where are we
 
 
+// 
 
 
-// StateMachine's function prototypes using OOP approach
-void statemachine_init(state);
+// statemachine's functions prototypes for rendering
+void statemachine_init(StartState);
 void statemachine_enter();
 void statemachine_exit();
 void statemachine_change(struct StateMachine *pStateMachine);
