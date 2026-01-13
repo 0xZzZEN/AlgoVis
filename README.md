@@ -5,7 +5,8 @@ Work In Progress
 
 Goal is to render <b>sorting algorithms</b> on the screen and trace them without any prior knowledge about SDL/OpenGL
 
-# A concept art from PlayState
+# A concept art from PlayState (VIP, doesn't represent the final outcome)
+<img width="1024" height="588" alt="croupier_playState2" src="https://github.com/user-attachments/assets/20ee1eed-6a12-4bc6-a59b-eec4ef5f57ac" /> 
 
 # Program states
 <br>StartState - a starting state after execution. The croupier appearance 
