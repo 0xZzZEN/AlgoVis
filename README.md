@@ -16,3 +16,4 @@ Goal is to render <b>sorting algorithms</b> on the screen and trace them without
 <br>PlayState - a visualization of the particular algorithm, with step by step approach
 
 # Transition map
+MenuState->RandomState or StartState->PlayState
