@@ -8,7 +8,6 @@ To be able to render simple **algorithms** using different **datastructures** on
 Build everything without relying on heavy frameworks, focusing on low-level concepts and **software rendering**.
 
 Work In Progress
-
 ## A concept art from PlayState (WIP, doesn't represent the final outcome)
 <img width="1024" height="588" alt="croupier_playState2" src="https://github.com/user-attachments/assets/20ee1eed-6a12-4bc6-a59b-eec4ef5f57ac" /> 
 
@@ -32,3 +31,6 @@ All character artwork, sprites, and visual assets are licensed under **Creative 
 You may not use the artistic material for commercial purposes without explicit permission.
 
 If you wish to use the source code or artistic material for proprietary, closed-source, or commercial purposes, or require alternative licensing terms, please contact: **vitalii.mitichkin@gmail.com**
+
+## Future goals
+add OpenGL or Vulkan support
