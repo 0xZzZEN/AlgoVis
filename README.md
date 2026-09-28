@@ -13,10 +13,10 @@ Work In Progress
 <img width="1024" height="588" alt="croupier_playState2" src="https://github.com/user-attachments/assets/20ee1eed-6a12-4bc6-a59b-eec4ef5f57ac" /> 
 
 ## Program states
-StartState - a starting state after execution. The croupier appearance 
-MenuState - a selection option for choosing data structures, particular algorithm, etc
-LoadingState - transition from the MenuState to the PlayState
-RandomState - a random event with a 33% chance, happening in the LoadingState
+StartState - a starting state after execution. The croupier appearance <br>
+MenuState - a selection option for choosing data structures, particular algorithm, etc <br>
+LoadingState - transition from the MenuState to the PlayState <br>
+RandomState - a random event with a 33% chance, happening in the LoadingState <br>
 PlayState - a visualization of the particular algorithm, with step by step approach
 ## Transition map
 MenuState->RandomState or StartState->PlayState
