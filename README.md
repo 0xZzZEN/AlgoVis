@@ -28,4 +28,4 @@ It is free software: you can redistribute it and/or modify it under the terms of
 All character artwork, sprites, and visual assets are licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
 You may not use the artistic material for commercial purposes without explicit permission.
 
-If you wish to use the source code or use the artistic material in a proprietary/closed-source/commercial purposes product, or require alternative commercial licensing terms, please contact: **vitalii.mitichkin@gmail.com**
+If you wish to use the source code or artistic material for proprietary, closed-source, or commercial purposes, or require alternative licensing terms, please contact: **vitalii.mitichkin@gmail.com**
