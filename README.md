@@ -17,3 +17,15 @@ Goal is to render <b>sorting algorithms</b> on the screen and trace them without
 
 # Transition map
 MenuState->RandomState or StartState->PlayState
+
+# AlgoVis License
+
+### 1. Source Code
+The source code of AlgoVis is licensed under the **GNU General Public License v3.0 (GPLv3)**.
+It is free software: you can redistribute it and/or modify it under the terms of the GPLv3.
+
+### 2. Character Art & Visual Assets
+All character artwork, sprites, and visual assets are licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
+You may not use the artistic material for commercial purposes without explicit permission.
+
+If you wish to use the source code or use the artistic material in a proprietary/closed-source/commercial purposes product, or require alternative commercial licensing terms, please contact: **vitalii.mitichkin@gmail.com**
