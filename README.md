@@ -1,24 +1,26 @@
-An interactive, cross-platform algorithm visualizer built with C and raylib. Explore a combination of logic, entertainment and art
+# AlgoVis
+An interactive, cross-platform (currently for Linux/Windows) algorithm visualizer built with C and raylib. Explore a combination of logic, entertainment and art
 
-Educational project to understand how raylib works..
-Work In Progress
+## Project goals
+Educational project to understand how rendering works without any prior knowledge about graphics API like OpenGL, DirectX..
+To be able to render simple **algorithms** using different **datastructures** on the screen and use a **faceless croupier character** to step through..
 
-Goal is to render <b>sorting algorithms</b> on the screen and trace them without any prior knowledge about SDL/OpenGL
+Build everything without relying on heavy frameworks, focusing on low-level concepts and **software rendering**.
 
-# A concept art from PlayState (WIP, doesn't represent the final outcome)
+## A concept art from PlayState (WIP, doesn't represent the final outcome)
 <img width="1024" height="588" alt="croupier_playState2" src="https://github.com/user-attachments/assets/20ee1eed-6a12-4bc6-a59b-eec4ef5f57ac" /> 
 
-# Program states
+## Program states
 <br>StartState - a starting state after execution. The croupier appearance 
 <br>MenuState - a selection option for choosing data structures, particular algorithm, etc
 <br>LoadingState - transition from the MenuState to the PlayState
 <br>RandomState - a random event with a 33% chance, happening in the LoadingState
 <br>PlayState - a visualization of the particular algorithm, with step by step approach
 
-# Transition map
+## Transition map
 MenuState->RandomState or StartState->PlayState
 
-# AlgoVis License
+## AlgoVis License
 
 ### 1. Source Code
 The source code of AlgoVis is licensed under the **GNU General Public License v3.0 (GPLv3)**.
