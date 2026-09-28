@@ -33,4 +33,8 @@ You may not use the artistic material for commercial purposes without explicit p
 If you wish to use the source code or artistic material for proprietary, closed-source, or commercial purposes, or require alternative licensing terms, please contact: **vitalii.mitichkin@gmail.com**
 
 ## Future goals
+add support for complex algorithms (ex: Dijkstra's algorithm)
+add more data structures
+add walkthroughs and comparison during real-time and underlying (split screen) C code for specific algorithms
+add math (?) notations to understand time-complexity of algorithms, memory-complexity 
 add OpenGL or Vulkan support
