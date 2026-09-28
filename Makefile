@@ -16,8 +16,8 @@ OBJS = $(patsubst %.c, %.o, $(PROJECT_SOURCE_FILES))
 
 # Locations of raylib.h and libraylib.a/libraylib.so
 # Library type compilation: STATIC (.a) or SHARED (.so/.dll)
-RAYLIB_INCLUDE_PATH   ?= c:/msys64/mingw64/lib/raylib/include
-RAYLIB_LIB_PATH       ?= c:/msys64/mingw64/lib/raylib/lib
+RAYLIB_INCLUDE_PATH   ?= --
+RAYLIB_LIB_PATH       ?= --
 RAYLIB_LIBTYPE        ?= STATIC
 
 # Locations of additional headers
