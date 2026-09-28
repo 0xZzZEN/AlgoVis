@@ -12,11 +12,12 @@ Work In Progress
 <img width="1024" height="588" alt="croupier_playState2" src="https://github.com/user-attachments/assets/20ee1eed-6a12-4bc6-a59b-eec4ef5f57ac" /> 
 
 ## Program states
-StartState - a starting state after execution. The croupier appearance <br>
-MenuState - a selection option for choosing data structures, particular algorithm, etc <br>
-LoadingState - transition from the MenuState to the PlayState <br>
-RandomState - a random event with a 33% chance, happening in the LoadingState <br>
-PlayState - a visualization of the particular algorithm, with step by step approach
+<p>StartState - a starting state after execution. The croupier appearance</p>
+<p>MenuState - a selection option for choosing data structures, particular algorithm, etc</p>
+<p>LoadingState - transition from the MenuState to the PlayState</p>
+<p>RandomState - a random event with a 33% chance, happening in the LoadingState</p>
+<p>PlayState - a visualization of the particular algorithm, with step by step approach</p>
+
 ## Transition map
 MenuState->RandomState or StartState->PlayState
 
@@ -33,8 +34,8 @@ You may not use the artistic material for commercial purposes without explicit p
 If you wish to use the source code or artistic material for proprietary, closed-source, or commercial purposes, or require alternative licensing terms, please contact: **vitalii.mitichkin@gmail.com**
 
 ## Future goals
-add support for complex algorithms (ex: Dijkstra's algorithm)
-add more data structures
-add walkthroughs and comparison during real-time and underlying (split screen) C code for specific algorithms
-add math (?) notations to understand time-complexity of algorithms, memory-complexity 
-add OpenGL or Vulkan support
+</p>add support for complex algorithms (ex: Dijkstra's algorithm)</p>
+<p>add more data structures</p>
+<p>add walkthroughs and comparison during real-time and underlying (split screen) C code for specific algorithms</p>
+<p>add math (?) notations to understand time-complexity of algorithms, memory-complexity </p>
+<p>add OpenGL or Vulkan support</p>
