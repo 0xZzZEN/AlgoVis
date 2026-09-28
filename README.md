@@ -7,6 +7,8 @@ To be able to render simple **algorithms** using different **datastructures** on
 
 Build everything without relying on heavy frameworks, focusing on low-level concepts and **software rendering**.
 
+Work In Progress
+
 ## A concept art from PlayState (WIP, doesn't represent the final outcome)
 <img width="1024" height="588" alt="croupier_playState2" src="https://github.com/user-attachments/assets/20ee1eed-6a12-4bc6-a59b-eec4ef5f57ac" /> 
 
