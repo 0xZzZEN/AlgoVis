@@ -1,5 +1,5 @@
 # AlgoVis
-An interactive, cross-platform (currently for Linux/Windows) algorithm visualizer built with C and raylib. Explore a combination of logic, entertainment and art
+An interactive, cross-platform (currently for Linux/Windows) algorithm visualizer built with C. Explore a combination of logic, entertainment and art
 
 ## Project goals
 Educational project to understand how rendering works without any prior knowledge about graphics API like OpenGL, DirectX..
